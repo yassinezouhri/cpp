@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include <cmath>
 #include "point.hh"
 using namespace ::std;
 
@@ -16,19 +16,19 @@ Point::Point(const Point& pnd){
   _x=pnd._x  ;
   _y=pnd._y  ;
 }
-Point::double getX(){
+double Point::getX() const{
   return _x;
 }
-Point:: double getY(){
+double Point::getY() const{
   return _y;
 }
-Point:: setX(double x){
+void Point:: setX(double x){
   _x=x;
 }
-Point:: setY(double y){
+void Point:: setY(double y){
   _y=y;
 }
-distance(const Point& p1, const Point& p2){
+double distance(const Point& p1, const Point& p2){
   double dx = p1.getX() - p2.getX();
   double dy = p1.getY() - p2.getY();
 

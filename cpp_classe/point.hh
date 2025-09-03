@@ -9,8 +9,8 @@ class Point{
     Point();
     Point(double x, double y);
     Point(const Point&);
-    double getX() ;
-    double getY();
+    double getX() const;
+    double getY() const;
     void setX(double x);
     void setY(double y);
     double distance(const Point&, const Point&);
